@@ -1,1 +1,2 @@
-# System-Design-Lecture-In-Mod-7
+# System Design
+Design an application from scratch building the necessary components.
