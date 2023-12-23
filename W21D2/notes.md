@@ -89,10 +89,12 @@ db.session.add(user)
 db.session.commit()
 ```
 ```
+// Transaction 1
 BEGIN (implicit)
 INSERT INTO users (username, email, hashed_password) VALUES (%(username)s, %(email)s, %(hashed_password)s) RETURNING users.id
 COMMIT
 
+// Transaction 2
 BEGIN (implicit)
 SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password
 FROM users
