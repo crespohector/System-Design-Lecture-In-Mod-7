@@ -121,6 +121,23 @@ WHERE users.id = %(id_1)s
 UPDATE users SET username=%(username)s, email=%(email)s WHERE users.id = %(users_id)s
 INFO sqlalchemy.engine.Engine COMMIT
 ```
+### Deleting a record from the db:
+```
+# /api/users/delete/id
+user_to_delete = User.query.get(id)
+
+if user_to_delete != None:
+  db.session.delete(user_to_delete)
+  db.session.commit()
+```
+```
+BEGIN (implicit)
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password 
+FROM users 
+WHERE users.id = %(pk_1)s
+DELETE FROM users WHERE users.id = %(id)s
+COMMIT
+```
 
 # THE NETWORK:
 Note that, while we are accustomed to communicating with our backend server from the client using HTTP Request / Responses,<br>
