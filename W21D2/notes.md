@@ -118,8 +118,8 @@ SELECT users.id AS users_id, users.username AS users_username, users.email AS us
 FROM users
 WHERE users.id = %(id_1)s
  LIMIT %(param_1)s
-2023-12-22 20:24:50,709 INFO sqlalchemy.engine.Engine UPDATE users SET username=%(username)s, email=%(email)s WHERE users.id = %(users_id)s
-2023-12-22 20:24:50,719 INFO sqlalchemy.engine.Engine COMMIT
+UPDATE users SET username=%(username)s, email=%(email)s WHERE users.id = %(users_id)s
+INFO sqlalchemy.engine.Engine COMMIT
 ```
 
 # THE NETWORK:
