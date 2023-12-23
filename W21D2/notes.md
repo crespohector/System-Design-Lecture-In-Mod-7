@@ -57,5 +57,9 @@ each DBMS uses it's own proprietary protocol on top of the TCP / IP Protocol, wh
 ### TCP Acknowledgment Packets:
 <img width="1958" alt="tcp_ack" src="https://github.com/crespohector/System-Design-Lecture-In-Mod-7/assets/107947798/cd4c4cca-fade-4cde-98d5-5121547fcfd5">
 
+### PostgreSQL Transaction:
+<img width="1953" alt="db_transaction" src="https://github.com/crespohector/System-Design-Lecture-In-Mod-7/assets/107947798/aa9b1052-63b1-4ad8-bdf4-0fd2e48df5d6">
+
+
 
 # SQL:
