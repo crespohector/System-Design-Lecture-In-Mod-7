@@ -74,6 +74,32 @@ SELECT posts.id AS posts_id, posts.user_id AS posts_user_id, posts.content AS po
 FROM posts
 WHERE %(param_1)s = posts.user_id
 ```
+### Posting a new user to the db:
+```
+# Creating a new user row in db and returning that newly created row to the caller.
+# In the SQL below, note the RETURNING keyword which is returning the new user id after creation.
+# That id is then used to query the database for the newly created user to send it back to us
+# so that we can assign it to the variable new_user.
+new_user = User(
+  username=form.data['username'],
+  email=form.data['email'],
+  password=form.data['password']
+)
+db.session.add(user)
+db.session.commit()
+```
+```
+BEGIN (implicit)
+INSERT INTO users (username, email, hashed_password) VALUES (%(username)s, %(email)s, %(hashed_password)s) RETURNING users.id
+COMMIT
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password
+FROM users
+WHERE users.id = %(pk_1)s
+SELECT posts.id AS posts_id, posts.user_id AS posts_user_id, posts.content AS posts_content
+FROM posts
+WHERE %(param_1)s = posts.user_id
+ROLLBACK
+```
 
 # THE NETWORK:
 Note that, while we are accustomed to communicating with our backend server from the client using HTTP Request / Responses,<br>
