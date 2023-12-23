@@ -11,7 +11,7 @@ DBMS is short for DataBase Management System. In short, it is what makes a file 
 # THE ORM:
 
 ## WHAT an ORM is:
-The term ORM is short for Object Relational Mapper. It provides us with a convenient Object Oriented interface, with which we can interact with our database. It parses responses from the database into class instances that represent rows in our db.
+The term ORM is short for Object Relational Mapper. An ORM performs 2 main tasks for us. 1) It provides us with a convenient Object Oriented interface, with which we can interact with our database. And 2) It writes SQL Statements for us! One of the really helpful aspects of the first feature is that it parses responses from the database into class instances that represent rows in our db! Let's see an example:
 
 ### An Example Mapping:
 When we fetch the Demo user from our database, we receive the packet below as the response.<br>
