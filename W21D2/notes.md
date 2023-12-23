@@ -32,7 +32,22 @@ Now that SQLAlchemy has the keys and the values that map to them, it can instant
 }
 ```
 
-Also by using the builtin methods, we are having our ORM write SQL queries for us.
+Also by using the builtin methods, we are having our ORM write SQL queries for us. Let's correlate some common SQLAlchemy lines into their respective SQL statements:
+
+### Fetching a single row of data from a database table:
+```
+# /api/users/id:
+user = User.query.get(id)
+```
+```
+BEGIN (1st command sent to db)
+
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password
+FROM users
+WHERE users.id = %(pk_1)s (2nd command sent to db)
+
+ROLLBACK (final command sent to db)
+```
 
 # NETWORK:
 Note that, while we are accustomed to communicating with our backend server from the client using HTTP Request / Responses,<br>
