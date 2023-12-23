@@ -36,7 +36,7 @@ Also by using the builtin methods, we are having our ORM write SQL queries for u
 
 ### Fetching a single row of data from a database table:
 ```
-# /api/users/id:
+# /api/users/id
 user = User.query.get(id)
 ```
 ```
@@ -47,6 +47,32 @@ FROM users
 WHERE users.id = %(pk_1)s (2nd command sent to db)
 
 ROLLBACK (final command sent to db)
+```
+
+### Fetching all rows from a database table:
+```
+# /api/users/
+users = User.query.all()
+```
+```
+BEGIN (1st command sent to db)
+
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password 
+FROM users (2nd command sent to db)
+
+ROLLBACK (final command sent to db)
+```
+
+### Fetching posts through a relationship:
+```
+# /api/users/id
+posts = user.posts
+# By simply keying into our relationship from our user instance, SQLAlchemy generates the SQL Statement below and retrieves the posts from the db!
+```
+```
+SELECT posts.id AS posts_id, posts.user_id AS posts_user_id, posts.content AS posts_content 
+FROM posts
+WHERE %(param_1)s = posts.user_id
 ```
 
 # THE NETWORK:
