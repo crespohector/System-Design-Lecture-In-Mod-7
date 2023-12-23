@@ -52,6 +52,10 @@ ROLLBACK (final command sent to db)
 # NETWORK:
 Note that, while we are accustomed to communicating with our backend server from the client using HTTP Request / Responses,<br>
 the way that our backend communicates with the database is a little different. Notably, it does NOT use the HTTP Protocol and instead<br>
-each DBMS uses it's own proprietary protocol on top of the TCP / IP Protocol, which HTTP is also built on top of. In production we will see packets marked with PostgreSQL Headers!
+each DBMS uses it's own proprietary protocol on top of the TCP / IP Protocol, which HTTP is also built on top of. In production we will see packets marked with PostgreSQL Headers! I also want to make a general note about how the TCP Protocol works. As we'll see in the screenshot below, EVERY packet that is recieved on either end of the communication will be ACKNOWLEDGED by sending an ACK TCP packet in response. This tells the sender of the packet that it was recieved successfully. As TCP has methods in place to ensure data integrity, this extra response allows us to check for the condition where a packet was lost or even malformed at some point in it's journey and allows the sender to re-send the packet when necessary. Also note that the sender will set a timeout when sending data. If an ACK packet isn't received by the expiry of the timer, it will automatically resend the packet! TCP offers assurance of data transmission!!
+
+### TCP Acknowledgment Packets:
+<img width="1958" alt="tcp_ack" src="https://github.com/crespohector/System-Design-Lecture-In-Mod-7/assets/107947798/cd4c4cca-fade-4cde-98d5-5121547fcfd5">
+
 
 # SQL:
