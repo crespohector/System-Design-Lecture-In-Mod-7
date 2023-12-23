@@ -68,3 +68,5 @@ As mentioned above, the SQL Language comprises a number of sub-classes of comman
 
 <img width="708" alt="SQL_Sub-categories" src="https://github.com/crespohector/System-Design-Lecture-In-Mod-7/assets/107947798/bd81de1c-05aa-416d-890a-23ef7978b87e">
 
+# GOTCHAS:
+1. Note that if you are watching your Flask terminal and seeing a lot of unexpected SQL, it may be coming from your validation Form, not the endpoint...
