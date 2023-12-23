@@ -11,9 +11,7 @@ DBMS is short for DataBase Management System. In short, it is what makes a file 
 # THE ORM:
 
 ## WHAT an ORM is:
-The term ORM is short for Object Relational Mapper. It provides us with a convenient Object Oriented interface, with which we can interact with our database.
-By using the builtin methods, we are having it write SQL queries for us.
-It also parses the response from the database into class instances that represent rows in our db.
+The term ORM is short for Object Relational Mapper. It provides us with a convenient Object Oriented interface, with which we can interact with our database. It parses responses from the database into class instances that represent rows in our db.
 
 ### An Example Mapping:
 When we fetch the Demo user from our database, we receive the packet below as the response.<br>
@@ -24,6 +22,17 @@ This packet has been formatted by the tool Wireshark and can be parsed as follow
 
 <img width="1146" alt="row_description_and_row_data" src="https://github.com/crespohector/System-Design-Lecture-In-Mod-7/assets/107947798/ec64d017-8761-4641-9715-1ba5d95b4058">
 
+Now that SQLAlchemy has the keys and the values that map to them, it can instantiate an object of class User, using these values, thereby providing us with a convenient Python object for us to interact with programmatically and ultimately return to the client side of our app. A class instance which we will turn into a dictionary as shown below:
+
+```
+{
+  'id': 1,
+  'username': 'Demo',
+  'email': 'demo@aa.io'
+}
+```
+
+Also by using the builtin methods, we are having our ORM write SQL queries for us.
 
 # NETWORK:
 Note that, while we are accustomed to communicating with our backend server from the client using HTTP Request / Responses,<br>
