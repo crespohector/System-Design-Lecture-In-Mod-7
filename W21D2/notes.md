@@ -92,6 +92,8 @@ db.session.commit()
 BEGIN (implicit)
 INSERT INTO users (username, email, hashed_password) VALUES (%(username)s, %(email)s, %(hashed_password)s) RETURNING users.id
 COMMIT
+
+BEGIN (implicit)
 SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password
 FROM users
 WHERE users.id = %(pk_1)s
@@ -99,6 +101,23 @@ SELECT posts.id AS posts_id, posts.user_id AS posts_user_id, posts.content AS po
 FROM posts
 WHERE %(param_1)s = posts.user_id
 ROLLBACK
+```
+### Updating a record in the db:
+```
+# /api/users/update/id
+user_to_update = User.query.filter(User.id == id).first()
+user_to_update.email = body['email']
+user_to_update.username = body['username']
+db.session.commit()
+```
+```
+BEGIN (implicit)
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password
+FROM users
+WHERE users.id = %(id_1)s
+ LIMIT %(param_1)s
+2023-12-22 20:24:50,709 INFO sqlalchemy.engine.Engine UPDATE users SET username=%(username)s, email=%(email)s WHERE users.id = %(users_id)s
+2023-12-22 20:24:50,719 INFO sqlalchemy.engine.Engine COMMIT
 ```
 
 # THE NETWORK:
