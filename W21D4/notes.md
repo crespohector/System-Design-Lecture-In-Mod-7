@@ -1,0 +1,22 @@
+# Frontend to Backend Communication
+
+## Challenges
+
+Today we will be discussing the data-flow between our Frontend (Client-Side) and Backend code.
+
+### Where is the frontend in development?
+
+### Where is the frontend in production?
+Kind of a trick question. In both cases the code is running in the client's browser, however the code is being served from different places in development and production.
+
+### What protocol will the browser and server use to communicate with each other?
+
+### What security considerations do we need to take into account in both scenarios, if any?
+
+### What is the Same Origin Policy (SOP)?
+
+### What is Cross Origin Resource Sharing (CORS)?
+
+### Does our application need an Entry Point and if so, where is it?
+
+### What is a bundler and what is it doing with our source code?
