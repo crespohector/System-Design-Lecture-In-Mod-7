@@ -1,4 +1,4 @@
-Infrastructure as a Service (IaaS) - 
+Infrastructure as a Service (IaaS) - A form of cloud computing that provides virtualized computing resources over the internet. The provider of that service is responsible for maintaining the hardware that you will be paying to use as a customer. The customer is responsible for maintaining the application code or software that is running on that hardware! Examples: AWS, GCP, Azure.
 
 Platform as a Service (PaaS) - 
 
