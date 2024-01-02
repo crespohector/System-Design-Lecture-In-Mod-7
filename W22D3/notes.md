@@ -1,6 +1,7 @@
 # Reliability
 
 ## Challenges
+Today we will look at some of the aspects of an application that help ensure the stability of the app itself and also the data integrity of our app.
 
 ### What factors contribute to the Reliability of an application?
 
