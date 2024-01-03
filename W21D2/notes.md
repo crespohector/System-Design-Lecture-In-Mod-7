@@ -8,6 +8,10 @@ We shall discuss the design considerations that go into assessing our applicatio
 
 ### What kind of DBMS should we choose?
 
+### What database are we using in our production environment?
+
+### What database are we using in our development environment?
+
 ### What protocol are we using when interacting with our database?
 
 ### What are database "transactions"?
