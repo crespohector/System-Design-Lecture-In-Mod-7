@@ -12,7 +12,7 @@ Object Relational Mapper (ORM) - Connects object-oriented program (OOP) code wit
 
 Object Document Mapper (ODM): Provides an Object Oriented interface to accessing documents in a NoSQL database. Documents, while unstructured (we don't need to define attribute names or the number of such attributes), are formatted and so we need to interface with that particular document format. The most common format is JSON followed by BSON (binary) and sometimes even XML or YAML.
 
-NoSQL (Not Only SQL): A category of databases that are have flexible shemas. Meaning that records can be of various datatypes and sizes as opposed to the structured and pre-defined nature of Relational Databases. These types of databases can be sub-divided into 4 common architectures: Document Based (JSON, BSON, XML), Key-Value Store, Wide-Column, Graph based.
+NoSQL (Not Only SQL): A category of databases that have flexible shemas. Meaning that records can be of various datatypes and sizes as opposed to the structured and pre-defined nature of Relational Databases. These types of databases can be sub-divided into 4 common architectures: Document Based (JSON, BSON, XML), Key-Value Store, Wide-Column, Graph based.
 Notable Examples of each type:
 Document Based: MongoDB, Elastisearch (AWS), CouchDB
 Key-Value Store: IndexedDB, Redis, Memcached
