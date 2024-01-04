@@ -11,12 +11,17 @@ Kind of a trick question. In both cases the code is running in the client's brow
 
 ### What protocol will the browser and server use to communicate with each other?
 
+### Does our application need an Entry Point and if so, where is it?
+
+### What is a bundler and what is it doing with our source code?
+
+### 
+
+
+EXTERNAL REPO:
+
 ### What security considerations do we need to take into account in both scenarios, if any?
 
 ### What is the Same Origin Policy (SOP)?
 
 ### What is Cross Origin Resource Sharing (CORS)?
-
-### Does our application need an Entry Point and if so, where is it?
-
-### What is a bundler and what is it doing with our source code?
