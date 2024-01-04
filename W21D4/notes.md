@@ -15,7 +15,10 @@ Kind of a trick question. In both cases the code is running in the client's brow
 
 ### What is a bundler and what is it doing with our source code?
 
-### 
+## What tool should we use to encode the data being sent to the server?
+JSON!!
+
+## Let's do an example of what the req / res data flow would look like with sending a GET and POST request.
 
 
 EXTERNAL REPO:
