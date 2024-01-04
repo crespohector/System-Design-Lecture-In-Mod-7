@@ -1,12 +1,10 @@
 # Let's review the current state of the system design
 
-## What tool should we use to encode the data being sent to the server?
-JSON!!
+## Cloud technologies and Non-Functional Requirements
 
-## Let's do an example of what the req / res data flow would look like with sending a GET and POST request.
+### Using AWS s3 to store images.
 
-## How can improve system?
-
+## How can we improve the system?
 ### Non-functional requirements
 
 1. Reliability
@@ -14,6 +12,5 @@ JSON!!
 2. Availability
 
 3. Latency
-
 
 ## Conclusion
