@@ -20,7 +20,7 @@ XML Response:</br>
 JSON Response:</br>
 <img width="546" alt="json_response" src="https://github.com/crespohector/System-Design-Lecture-In-Mod-7/assets/107947798/b36ac857-cf33-4e9b-a5f6-88bfabb5d3b5">
 
-## Practical and Technical Comparison of XML and JSON formats for Web Deveolpment:
+## Practical and Technical Comparison of XML and JSON formats for Web Development:
 
 ### Practical Considerations:
 By simply looking at the 2 formats, it is obvious that JSON is not only MORE human-readable but it is also almost identical to the way that write code in an Object Oriented Way. XML does not resemble our application code at all (aside from looking similar to HTML) and will always require extra parsing steps to change it into an object representation of the data.
