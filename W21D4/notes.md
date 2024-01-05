@@ -19,12 +19,3 @@ Kind of a trick question. In both cases the code is running in the client's brow
 JSON!! vs XML
 
 ## Let's do an example of what the req / res data flow would look like with sending a GET and POST request.
-
-
-EXTERNAL REPO:
-
-### What security considerations do we need to take into account in both scenarios, if any?
-
-### What is the Same Origin Policy (SOP)?
-
-### What is Cross Origin Resource Sharing (CORS)?
