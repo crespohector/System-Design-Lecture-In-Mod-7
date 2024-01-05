@@ -14,10 +14,10 @@ Here we will see the ways that developers can format a payload as XML. Note that
 ## Request / Response Payload comparison between XML and JSON:
 In consideration of the 2 payloads below, we can immediately observe 2 things. 1) The XML payload is a little more difficult to read than the JSON payload and  2) The XML payload appears to be comprised of a lot more characters, meaning a lot more bytes, and a lot more data... This topic will be broached in the following section.
 
-XML Response:
+XML Response:</br>
 <img width="545" alt="xml_payload" src="https://github.com/crespohector/System-Design-Lecture-In-Mod-7/assets/107947798/7e961df7-807c-4faa-9349-29f3669a4704">
 
-JSON Response:
+JSON Response:</br>
 <img width="546" alt="json_response" src="https://github.com/crespohector/System-Design-Lecture-In-Mod-7/assets/107947798/b36ac857-cf33-4e9b-a5f6-88bfabb5d3b5">
 
 ## Practical and Technical Comparison of XML and JSON formats for Web Deveolpment:
