@@ -1,4 +1,4 @@
-# Comparing XML (appliocation/xml) and JSON (application/json)
+# Comparing XML (application/xml) and JSON (application/json)
 
 As the internet has continued to grow and be refined, we find that some technologies have been replaced by newer ones and this trend will likely continue. In the early days of the web, building APIs was a little different. Even if an API was following a RESTful convention, the data exchange format was likely different from what we see today. Particularly, the once common data exchange format, XML, has been replaced with JSON except in cases where an existing architecture simply demands XML. Below, we will outline some of the differences between these 2 formats and why JSON was an obvious choice moving forward.
 
