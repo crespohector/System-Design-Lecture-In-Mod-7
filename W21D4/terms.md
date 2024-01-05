@@ -6,6 +6,6 @@ Same Origin Policy (SOP) - The same-origin policy is a critical security mechani
 
 Cross-Origin Resource SHaring (CORS) - An HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
 
-Hyper-Text Transfer Protocol (HTTP) - An application-layer protocol that is used primarily for the transmission of data between browsers and servers.
+Hyper-Text Transfer Protocol (HTTP) - An application-layer protocol that is used primarily for the transmission of data between browsers and servers and servers and servers.
 
 Bundler - A module bundler is a tool developers use to bundle an app's modules and dependencies into a single browser-compatible JavaScript file. Webpack also performs these same operations on your CSS code files!
