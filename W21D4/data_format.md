@@ -31,4 +31,4 @@ By simply looking at the 2 formats, it is obvious that JSON is not only MORE hum
 2. Serialization Performance: Serializing an object into a JSON string is also faster than producing an XML Document.
 3. Payload Size: JSON format also results in a smaller payload size (sometimes significant) than XML, further making data transmission quicker and less costly than XML.
 4. Server Load: The strain on the server is actually noticable when comparing the memory footprints for serialization / deserialization processes and also in the simple fact that with JSON, there is less data to even process in the first place!
-5. Human Aspect: A JSON serialized object is VERY close to a python dictionary or javascript object when we recieve it!!
+5. Human Aspect: A JSON serialized object is VERY close to a python dictionary or javascript object when we recieve it!! As an engineer, we want to work with more straightforward data types.
