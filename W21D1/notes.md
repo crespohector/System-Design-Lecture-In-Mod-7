@@ -11,8 +11,7 @@ MobMingle: The Mafia Social Network
 A social media app where mafia leaders can connect with each other to network.
 
 ### Who are the stakeholders?
-Brian and I will be the project leads to oversee the planning, development, and execution with assistance from the class.
-In addition, the class and other mafia organizations will be the investors that will assist with funding the project.
+Stakeholders are the people or groups who have an interest or influence in the system, such as customers, users, developers, managers, regulators, and competitors.
 
 ### Define the functional requirements.
 
