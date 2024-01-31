@@ -16,6 +16,8 @@ We shall discuss the design considerations that go into assessing our applicatio
 
 ### What are database "transactions"?
 
+### How will we communicate with the database?
+
 ### What is an ORM?
 
 ### Why should we use an ORM?
