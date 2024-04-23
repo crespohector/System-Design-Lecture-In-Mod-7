@@ -21,3 +21,8 @@ We shall discuss the design considerations that go into assessing our applicatio
 ### What is an ORM?
 
 ### Why should we use an ORM?
+
+### A general rule (The Many-to-Many Rule) for selecting a database for your application:
+* Document Based (NoSQL): Choose this architecture when your data contains little to no relationships and NO Many-to-Many relationships.
+* Relational: Choose this architecture when your data has numerous relationships, but when only a couple of them would be considered Many-to-Many.
+* Graph Based (NoSQL): Choose this architecture when your data has numerous Many-to-Many relationships!
